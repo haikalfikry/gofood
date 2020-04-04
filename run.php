@@ -33,17 +33,7 @@ if ($register == false)
         }
       else
         {
-		$h=fopen("newgojek.txt","a");
-		fwrite($h,json_encode(array('token' => $verif, 'voc' => 'gofood gak ada'))."\n");
-		fclose($h); 
-                echo "\e[!] Trying to redeem Reff :G-MPW4WBM !\n";
-                sleep(3);
-            $claim = reff($verif);
-            if ($claim == false){
-            echo "\e[!] Failed to Claim Voucher, Try to Claim Manually\n";
-            }else{
-                echo "\e[+] ".$claim."\n";
-            }
+            echo "\e[!] Daftar sukses !\n";
     }
     }
     }
